@@ -15,9 +15,12 @@
           videoId: '0wVvBmiHwZo',
           events: {
             'onReady': onPlayerReady,
-            'onStateChange': onPlayerStateChange
+            //'onStateChange': onPlayerStateChange
           }
         });
+      }
+      function onPlayerReady(event) {
+        event.target.playVideo();
       }
     </script></br>
     <p><img src="https://nara5463.github.io/kiosk/image.png" alt="test" width="1080"></p>
